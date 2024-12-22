@@ -1,16 +1,20 @@
-#!/usr/bin/env node
-
 import fs from 'fs';
 import dotenv from 'dotenv';
 import chalk from 'chalk';
 import notifier from 'node-notifier';
 import { firefox } from 'playwright';
 import player from 'play-sound';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import path from 'path';  
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const envPath = process.env.ENV_PATH || path.resolve(__dirname, '.env');
+dotenv.config({ path: envPath });
 
 const audioPlayer = player();
-
 const codes = process.env.CODES?.split(',') || [];
 const attendingUnit = process.env.ATTENDING_UNIT;
 const consultationSite = "https://is.gd/2oy8FJ";

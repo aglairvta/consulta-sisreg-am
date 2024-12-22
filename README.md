@@ -19,14 +19,15 @@ Diariamente, o script acessa o site do SISREG para verificar o status dos exames
 ### O que você precisa
 
 - [Node.js](https://nodejs.org) instalado no seu computador.
-- Criar um arquivo `.env` com as variáveis de ambiente personalizadas. Estas variáveis definem os parâmetros necessários para o funcionamento do script, como os códigos dos exames, a unidade de atendimento e o local onde seus arquivos de som estão armazenados.
+- Crie um arquivo .env contendo as variáveis de ambiente personalizadas. Essas variáveis configuram os parâmetros necessários para o funcionamento do script, como os códigos dos exames, a unidade de atendimento, o local do arquivo .env e o diretório onde os arquivos de som estão armazenados.
 
 ### Exemplo de arquivo `.env`:
 
 ```bash
 CODES=123456789,987654321
 ATTENDING_UNIT="HOSPITAL EXEMPLO"
-SOUND_FILES_PATH="/home/usuario/Documentos/consulta-sisreg/sounds"
+SOUND_FILES_PATH="/home/usuario/Documentos/consulta-sisreg-am/sounds"
+ENV_PATH="/home/usuario/Documentos/consulta-sisreg-am/.env"
 ```
 
 #### O que cada variável faz:
@@ -34,6 +35,7 @@ SOUND_FILES_PATH="/home/usuario/Documentos/consulta-sisreg/sounds"
 - **CODES:** Aqui você coloca os códigos dos exames ou consultas que quer monitorar. Exemplo: 123456789,987654321 (separados por vírgula).
 - **ATTENDING_UNIT:** Nome da unidade de atendimento onde você está fazendo o exame, como "HOSPITAL EXEMPLO". Isso ajuda a selecionar automaticamente a unidade correta no site.
 - **SOUND_FILES_PATH:** Caminho onde você armazenará os arquivos de som que serão tocados quando houver uma notificação. Exemplo: /home/usuario/Documentos/consulta-sisreg/sounds.
+- **ENV_PATH:** Caminho absoluto para o arquivo .env. Exemplo: /home/usuario/Documentos/consulta-sisreg/.env.
 
 #### Como rodar o script
 
