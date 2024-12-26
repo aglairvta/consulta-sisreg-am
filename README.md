@@ -84,4 +84,4 @@ crontab -e
 
 - Certifique-se de configurar corretamente o arquivo .env para evitar erros.
 
-- Caso encontre problemas ou tenha sugestões, contribua abrindo uma issue no repositório GitHub.
+- Caso encontre problemas ou tenha sugestões, contribua abrindo uma issue.
