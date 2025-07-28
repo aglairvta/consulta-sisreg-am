@@ -38,7 +38,7 @@ ENV_PATH="/home/usuario/Documentos/consulta-sisreg-am/.env"
 
 - **CODES:** Aqui você coloca os códigos dos exames ou consultas que quer monitorar. Exemplo: 123456789,987654321 (separados por vírgula).
 - **ATTENDING_UNIT:** Nome da unidade de atendimento onde você está fazendo o exame, como "HOSPITAL EXEMPLO". Isso ajuda a selecionar automaticamente a unidade correta no site.
-- **SOUND_FILES_PATH:** Caminho onde você armazenará os arquivos de som que serão tocados quando houver uma notificação. Exemplo: /home/usuario/Documentos/consulta-sisreg/sounds.
+- **SOUND_FILES_PATH:** Caminho onde você armazenará os arquivos de som que serão tocados quando houver uma notificação. Exemplo: `/home/usuario/Documentos/consulta-sisreg/sounds`.
 - **ENV_PATH:** Caminho absoluto para o arquivo .env. Exemplo: `/home/usuario/Documentos/consulta-sisreg/.env`.
 
 ### Como rodar o script
